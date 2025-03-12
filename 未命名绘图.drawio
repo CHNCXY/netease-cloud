@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1781" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2099" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -22,8 +22,18 @@
         <mxCell id="nERVmw4V_uBVeB2J8nC3-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="nERVmw4V_uBVeB2J8nC3-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-45" value="RTC Alarm?&lt;div&gt;(Yes)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nERVmw4V_uBVeB2J8nC3-11">
+          <mxGeometry x="-0.3647" y="-1" relative="1" as="geometry">
+            <mxPoint x="-8" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="nERVmw4V_uBVeB2J8nC3-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="nERVmw4V_uBVeB2J8nC3-16">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-46" value="UART Request?&lt;div&gt;(Yes)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nERVmw4V_uBVeB2J8nC3-17">
+          <mxGeometry x="-0.4727" y="3" relative="1" as="geometry">
+            <mxPoint x="-3" y="8" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="Interrupt?&lt;div&gt;(RTC Alarm or UART wake-up Request?)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="125" y="412.5" width="190" height="125" as="geometry" />
@@ -49,13 +59,13 @@
         <mxCell id="nERVmw4V_uBVeB2J8nC3-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-10" target="nERVmw4V_uBVeB2J8nC3-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nERVmw4V_uBVeB2J8nC3-10" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Read RTC Time (I2C)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-10" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Wake up,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Read RTC Time (I2C)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-110" y="437.5" width="150" height="75" as="geometry" />
         </mxCell>
         <mxCell id="nERVmw4V_uBVeB2J8nC3-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-12" target="nERVmw4V_uBVeB2J8nC3-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nERVmw4V_uBVeB2J8nC3-12" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Blink LED&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-12" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Blink LED(turn on the out put pin for 100ms to control the Transistor)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-110" y="592.5" width="150" height="75" as="geometry" />
         </mxCell>
         <mxCell id="nERVmw4V_uBVeB2J8nC3-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-14" target="nERVmw4V_uBVeB2J8nC3-5">
@@ -74,7 +84,7 @@
         <mxCell id="nERVmw4V_uBVeB2J8nC3-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-16" target="nERVmw4V_uBVeB2J8nC3-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nERVmw4V_uBVeB2J8nC3-16" value="Read RTC Time (I2C)" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-16" value="Wake up,&lt;br&gt;Read RTC Time (I2C)" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="150" y="592.5" width="140" height="77.5" as="geometry" />
         </mxCell>
         <mxCell id="nERVmw4V_uBVeB2J8nC3-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-18" target="nERVmw4V_uBVeB2J8nC3-5">
@@ -89,6 +99,102 @@
         </mxCell>
         <mxCell id="nERVmw4V_uBVeB2J8nC3-18" value="Send Time to nRF&lt;div&gt;(via UART)&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="145" y="747.5" width="150" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-28" target="nERVmw4V_uBVeB2J8nC3-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="1642.5" as="sourcePoint" />
+            <mxPoint x="360" y="1560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="1665" />
+              <mxPoint x="350" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-25" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nERVmw4V_uBVeB2J8nC3-24">
+          <mxGeometry x="-0.2667" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-28" target="nERVmw4V_uBVeB2J8nC3-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-47" value="&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Request from Android?&lt;/span&gt;&lt;/div&gt;&lt;div&gt;(Yes)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nERVmw4V_uBVeB2J8nC3-26">
+          <mxGeometry x="-0.2235" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-28" target="nERVmw4V_uBVeB2J8nC3-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-49" value="Data from PIC?&lt;div&gt;(Yes)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nERVmw4V_uBVeB2J8nC3-27">
+          <mxGeometry x="-0.0727" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-28" value="Event?&lt;div&gt;(Data from PIC or Request from Android Device?)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="135" y="1602.5" width="190" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-30" target="nERVmw4V_uBVeB2J8nC3-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-30" value="Start / Reset" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="1230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-32" target="nERVmw4V_uBVeB2J8nC3-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-32" value="Initialize System&lt;div&gt;(BLE Stack, UART,&lt;/div&gt;&lt;div&gt;Low-Power Config, etc.)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="145" y="1340" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-34" target="nERVmw4V_uBVeB2J8nC3-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-34" value="Enter Low-power Mode" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="1490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-36" target="nERVmw4V_uBVeB2J8nC3-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-36" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Wake PIC(UART)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-140" y="1627.5" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-38" target="nERVmw4V_uBVeB2J8nC3-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-38" value="Receive current RTC Time(UART)" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-140" y="1782.5" width="150" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-40" target="nERVmw4V_uBVeB2J8nC3-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="1850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-65" y="2100" />
+              <mxPoint x="-190" y="2100" />
+              <mxPoint x="-190" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-40" value="Send Time to Android Device(BLE)" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-140" y="1937.5" width="150" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-42" target="nERVmw4V_uBVeB2J8nC3-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-42" value="Read Time from PIC(UART)" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="1782.5" width="140" height="77.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nERVmw4V_uBVeB2J8nC3-44" target="nERVmw4V_uBVeB2J8nC3-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="2050" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="2100" />
+              <mxPoint x="-190" y="2100" />
+              <mxPoint x="-190" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nERVmw4V_uBVeB2J8nC3-44" value="Send Time to Android Device(BLE)" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="155" y="1937.5" width="150" height="72.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
